@@ -1,0 +1,3 @@
+[submodule ".writ-src"]
+	path = .writ-src
+	url = https://github.com/sellke/writ.git
