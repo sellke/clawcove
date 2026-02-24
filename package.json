@@ -1,0 +1,18 @@
+{
+  "name": "clawcove",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenClaw hosting, simplified. Your own AI agent, running 24/7, in 5 minutes.",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  }
+}
