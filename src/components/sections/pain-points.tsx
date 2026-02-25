@@ -16,9 +16,9 @@ const PAIN_POINTS = [
   },
   {
     icon: Server,
-    title: "Shared infrastructure",
+    title: "Privacy concerns",
     description:
-      "Most hosting puts you on shared containers. Your data and performance depend on strangers. You deserve your own machine.",
+      "Most hosting shares resources between users. Your conversations, your data, your assistant's memory — sitting alongside strangers. You deserve better.",
   },
 ];
 

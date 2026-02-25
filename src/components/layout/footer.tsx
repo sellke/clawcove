@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 
 const linkGroups = [
@@ -26,7 +25,7 @@ export function Footer() {
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div className="max-w-xs">
             <div className="flex items-center gap-2">
-              <Image
+              <img
                 src="/mascot.png"
                 alt="ClawCove mascot"
                 width={28}

@@ -11,10 +11,10 @@ import { Button } from "@/components/ui/button";
 const PILLARS = [
   {
     icon: HardDrive,
-    title: "Your own private machine",
+    title: "Safe, secure, and yours",
     description:
-      "Every assistant runs on a dedicated virtual machine — not a shared container. Your data, your processes, completely isolated. Like having your own computer in the cloud.",
-    highlight: "Hypervisor-level isolation",
+      "Your assistant runs in its own fully isolated environment in the cloud — not shared with anyone else. Your data, your conversations, your memory, completely private and encrypted.",
+    highlight: "Fully isolated & encrypted",
   },
   {
     icon: Eye,

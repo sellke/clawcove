@@ -1,7 +1,6 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -47,13 +46,12 @@ export function Navigation() {
           className="group flex items-center gap-2"
           aria-label="ClawCove home"
         >
-          <Image
+          <img
             src="/mascot.png"
             alt="ClawCove mascot"
             width={36}
             height={36}
             className="transition-transform group-hover:scale-110"
-            priority
           />
           <span className="text-xl font-bold tracking-tight text-foreground">
             ClawCove

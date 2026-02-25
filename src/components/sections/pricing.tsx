@@ -18,7 +18,7 @@ const tiers: PricingTier[] = [
     description: "Try your own AI assistant — no strings attached",
     features: [
       "1 personal assistant",
-      "Your own private VM",
+      "Secure, isolated cloud environment",
       "1,000 messages/month",
       "Single channel (Telegram or Discord)",
       "Community support",
@@ -31,7 +31,7 @@ const tiers: PricingTier[] = [
     description: "Your full-time AI, fully unlocked",
     features: [
       "1 personal assistant",
-      "Your own private VM",
+      "Secure, isolated cloud environment",
       "Unlimited messages",
       "All channels (Telegram, Discord, Slack & more)",
       "Choose your AI model",
@@ -48,7 +48,7 @@ const tiers: PricingTier[] = [
     description: "Multiple assistants, one workspace",
     features: [
       "Up to 5 assistants",
-      "Dedicated VMs per assistant",
+      "Isolated environment per assistant",
       "Unlimited messages",
       "All channels + custom integrations",
       "Shared team workspace",
@@ -126,8 +126,8 @@ export function Pricing() {
         </div>
 
         <p className="mt-8 text-center text-sm text-foreground-subtle">
-          Planned launch pricing · Every plan includes your own private virtual
-          machine
+          Planned launch pricing · Every plan runs in a secure, isolated
+          environment
         </p>
       </div>
     </section>

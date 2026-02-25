@@ -20,9 +20,9 @@ const faqs = [
       "Not at all. If you can fill out a form and click a button, you can have a personal AI assistant. We ask what you want help with, configure everything for you, and connect it to your favorite channels. No coding, no command line, no servers.",
   },
   {
-    question: "What does \"your own private machine\" mean?",
+    question: "How secure is my assistant?",
     answer:
-      "Unlike most hosting services that put you on shared infrastructure, every ClawCove assistant runs on its own dedicated virtual machine. That means complete privacy — your data, your processes, and your assistant's memory are fully isolated. Think of it as your own computer in the cloud.",
+      "Every ClawCove assistant runs in its own fully isolated, encrypted environment in the cloud — not shared with anyone else. Your data, your conversations, and your assistant's memory are completely private. No one else can access them, including us.",
   },
   {
     question: "Which AI models does it use?",
@@ -42,7 +42,7 @@ const faqs = [
   {
     question: "What happens to my data?",
     answer:
-      "Your data stays yours. It lives on your dedicated virtual machine, encrypted and isolated. We never train on your data or share it. And you can export everything at any time — no lock-in, ever.",
+      "Your data stays yours. It lives in your own isolated, encrypted environment in the cloud. We never train on your data or share it. And you can export everything at any time — no lock-in, ever.",
   },
   {
     question: "When will ClawCove launch?",

@@ -10,7 +10,7 @@ export function FinalCTA() {
           </h2>
           <p className="mt-4 text-lg text-foreground-muted">
             Join the waitlist and be the first to get your own personal
-            assistant — running 24/7 on a private machine, just for you.
+            assistant — safe, secure, and running 24/7 in the cloud.
           </p>
 
           <div className="mt-8">

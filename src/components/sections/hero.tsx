@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FadeIn } from "@/components/animations/fade-in";
 import { WaitlistForm } from "@/components/forms/waitlist-form";
 
@@ -19,13 +18,11 @@ export function Hero() {
         <div className="mx-auto max-w-3xl text-center">
           <FadeIn>
             <div className="mb-6 flex justify-center">
-              <Image
+              <img
                 src="/mascot.png"
                 alt="ClawCove hermit crab mascot"
-                width={240}
-                height={160}
+                width={180}
                 className="drop-shadow-lg"
-                priority
               />
             </div>
           </FadeIn>
@@ -39,9 +36,9 @@ export function Hero() {
 
           <FadeIn delay={0.1}>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted md:text-xl">
-              An AI assistant that works 24/7 on its own private machine —
-              drafting emails, managing your calendar, automating tasks, and
-              more. No setup. No servers. Just tell it what you need.
+              A secure, always-on AI assistant in the cloud — drafting
+              emails, managing your calendar, automating tasks, and more.
+              No setup. No servers. Just tell it what you need.
             </p>
           </FadeIn>
 
@@ -58,7 +55,7 @@ export function Hero() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-foreground-muted">
               <span className="flex items-center gap-1.5">
                 <span className="size-1.5 rounded-full bg-success" />
-                Your own private VM
+                Safe &amp; secure in the cloud
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="size-1.5 rounded-full bg-success" />
