@@ -29,14 +29,12 @@ export function PainPoints() {
         <FadeIn>
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-              Having your own AI agent{" "}
-              <span className="text-foreground-muted">
-                shouldn&apos;t be this hard
-              </span>
+              AI power.{" "}
+              <span className="text-foreground-muted">No pain.</span>
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-foreground-muted">
-              You shouldn&apos;t need to be a developer to have an AI assistant
-              in your community.
+              Skip the technical hoops and hurdles. Get an assistant that works
+              for you — not the other way around.
             </p>
           </div>
         </FadeIn>
