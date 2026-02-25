@@ -26,7 +26,7 @@ export function Footer() {
           <div className="max-w-xs">
             <span className="text-lg font-bold tracking-tight">ClawCove</span>
             <p className="mt-2 text-sm text-foreground-muted">
-              OpenClaw hosting, simplified.
+              Your own personal AI. Always on. Always yours.
             </p>
           </div>
 

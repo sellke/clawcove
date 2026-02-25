@@ -8,58 +8,68 @@ interface PricingTier {
   description: string;
   features: string[];
   highlighted?: boolean;
+  cta: string;
 }
 
 const tiers: PricingTier[] = [
   {
     name: "Free",
     price: "$0",
-    description: "Get started at no cost",
+    description: "Try your own AI assistant — no strings attached",
     features: [
-      "1 AI agent",
-      "Community channels only",
+      "1 personal assistant",
+      "Your own private VM",
       "1,000 messages/month",
+      "Single channel (Telegram or Discord)",
       "Community support",
     ],
+    cta: "Start Free",
   },
   {
     name: "Pro",
     price: "$29",
-    description: "For serious builders",
+    description: "Your full-time AI, fully unlocked",
     features: [
-      "3 AI agents",
-      "All channels (Discord, Slack, Telegram)",
+      "1 personal assistant",
+      "Your own private VM",
       "Unlimited messages",
+      "All channels (Telegram, Discord, Slack & more)",
+      "Choose your AI model",
+      "Community skills & templates",
+      "Daily backups",
       "Priority support",
-      "Custom skills",
     ],
     highlighted: true,
+    cta: "Join the Waitlist",
   },
   {
     name: "Team",
     price: "$99",
-    description: "For teams and organizations",
+    description: "Multiple assistants, one workspace",
     features: [
-      "10 AI agents",
-      "All channels + custom integrations",
+      "Up to 5 assistants",
+      "Dedicated VMs per assistant",
       "Unlimited messages",
-      "Dedicated support",
-      "Team management dashboard",
-      "SSO & audit logs",
+      "All channels + custom integrations",
+      "Shared team workspace",
+      "Admin dashboard & roles",
+      "Priority support",
     ],
+    cta: "Join the Waitlist",
   },
 ];
 
 export function Pricing() {
   return (
-    <section id="pricing" className="bg-surface-alt py-24">
+    <section id="pricing" className="scroll-mt-20 py-24 md:py-32">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Simple, transparent pricing
           </h2>
           <p className="mt-4 text-lg text-foreground-muted">
-            Start free. Scale when you&apos;re ready.
+            Start free — no credit card, no catch. Upgrade when your assistant
+            becomes indispensable.
           </p>
         </div>
 
@@ -67,10 +77,10 @@ export function Pricing() {
           {tiers.map((tier) => (
             <div
               key={tier.name}
-              className={`relative flex flex-col rounded-xl border bg-card p-8 transition-all duration-200 ${
+              className={`relative flex flex-col rounded-2xl border p-8 transition-all duration-200 ${
                 tier.highlighted
-                  ? "border-primary-500 shadow-elevated lg:scale-105"
-                  : "border-border shadow-soft hover:shadow-card"
+                  ? "border-primary-500 bg-surface shadow-elevated lg:scale-105"
+                  : "border-border bg-surface shadow-soft hover:shadow-card"
               }`}
             >
               <div className="flex items-center gap-3">
@@ -80,9 +90,6 @@ export function Pricing() {
                     Most Popular
                   </Badge>
                 )}
-                <Badge variant="secondary" className="text-xs">
-                  Coming Soon
-                </Badge>
               </div>
 
               <div className="mt-4 flex items-baseline gap-1">
@@ -107,11 +114,11 @@ export function Pricing() {
 
               <a href="#waitlist" className="mt-8 block">
                 <Button
-                  className="w-full"
+                  className="w-full cursor-pointer"
                   variant={tier.highlighted ? "default" : "outline"}
                   size="lg"
                 >
-                  Join the Waitlist
+                  {tier.cta}
                 </Button>
               </a>
             </div>
@@ -119,7 +126,8 @@ export function Pricing() {
         </div>
 
         <p className="mt-8 text-center text-sm text-foreground-subtle">
-          Planned launch pricing — subject to change
+          Planned launch pricing · Every plan includes your own private virtual
+          machine
         </p>
       </div>
     </section>

@@ -10,29 +10,39 @@ import { AnalyticsEvents, trackEvent } from "@/lib/analytics/events";
 
 const faqs = [
   {
-    question: "What exactly does ClawCove do?",
+    question: "What can my AI assistant actually do?",
     answer:
-      "ClawCove gives you your own AI agent that lives in your Discord, Slack, or Telegram — available 24/7 to answer questions, moderate, assist your community, or automate tasks. We handle all the hosting and infrastructure so you don't have to.",
+      "Your assistant can draft emails, manage your calendar, automate repetitive tasks, monitor websites, write social media content, review code, track prices, compile research reports, and much more. It's powered by OpenClaw — a full AI agent that can do real work, not just answer questions.",
   },
   {
-    question: "Do I need technical skills?",
+    question: "Do I need any technical skills?",
     answer:
-      "Not at all. If you can fill out a form and click a button, you can deploy an AI agent. ClawCove is designed for everyone — community managers, small business owners, creators, and teams who want AI without the complexity.",
+      "Not at all. If you can fill out a form and click a button, you can have a personal AI assistant. We ask what you want help with, configure everything for you, and connect it to your favorite channels. No coding, no command line, no servers.",
   },
   {
-    question: "Which messaging platforms are supported?",
+    question: "What does \"your own private machine\" mean?",
     answer:
-      "At launch, we'll support Discord, Slack, and Telegram. More platforms — including WhatsApp and Microsoft Teams — are on our roadmap.",
+      "Unlike most hosting services that put you on shared infrastructure, every ClawCove assistant runs on its own dedicated virtual machine. That means complete privacy — your data, your processes, and your assistant's memory are fully isolated. Think of it as your own computer in the cloud.",
   },
   {
-    question: "What happens to my data?",
+    question: "Which AI models does it use?",
     answer:
-      "Your data stays yours. We encrypt everything in transit and at rest. We never train on your data or share it with third parties.",
+      "ClawCove is powered by OpenClaw, which supports multiple AI models including Claude, GPT-4, and more. You'll be able to see and choose which model powers your assistant. We keep everything updated so you always have access to the latest capabilities.",
   },
   {
     question: "What is OpenClaw?",
     answer:
-      "OpenClaw is the open-source AI agent framework that powers ClawCove. Think of it as the engine under the hood — it's powerful, transparent, and community-driven. ClawCove makes it easy to use without needing to manage the technical parts yourself.",
+      "OpenClaw is the world's fastest-growing open-source AI agent framework. It's a personal AI that can see your screen, use your apps, browse the web, and do real work. ClawCove makes it effortless to use — we handle all the hosting, setup, and maintenance so you don't have to.",
+  },
+  {
+    question: "How is this different from ChatGPT or other chatbots?",
+    answer:
+      "ChatGPT and similar tools are conversational — you ask, they answer. Your ClawCove assistant is an agent — it can take action. It runs 24/7, remembers your preferences, connects to your tools, and proactively does things for you even when you're not there.",
+  },
+  {
+    question: "What happens to my data?",
+    answer:
+      "Your data stays yours. It lives on your dedicated virtual machine, encrypted and isolated. We never train on your data or share it. And you can export everything at any time — no lock-in, ever.",
   },
   {
     question: "When will ClawCove launch?",
@@ -43,7 +53,7 @@ const faqs = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="bg-surface-alt py-24">
+    <section id="faq" className="scroll-mt-20 bg-surface-alt py-24">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
@@ -71,7 +81,7 @@ export function FAQ() {
                 <AccordionTrigger className="text-base font-medium">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-foreground-muted leading-relaxed">
+                <AccordionContent className="leading-relaxed text-foreground-muted">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

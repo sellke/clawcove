@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { label: "How it Works", href: "#how-it-works" },
+  { label: "Use Cases", href: "#use-cases" },
+  { label: "Why ClawCove", href: "#why-clawcove" },
   { label: "Pricing", href: "#pricing" },
   { label: "Blog", href: "/blog" },
-  { label: "FAQ", href: "#faq" },
 ];
 
 export function Navigation() {

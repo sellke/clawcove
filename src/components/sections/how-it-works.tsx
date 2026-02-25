@@ -1,4 +1,4 @@
-import { Plug, Rocket, UserPlus } from "lucide-react";
+import { MessageCircle, Rocket, UserPlus } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Badge } from "@/components/ui/badge";
 
@@ -12,17 +12,17 @@ const STEPS = [
   },
   {
     number: "2",
-    icon: Rocket,
-    title: "Deploy",
+    icon: MessageCircle,
+    title: "Tell Us What You Need",
     description:
-      "Choose your agent and deploy with one click. We handle the servers, the setup, and the scaling.",
+      "Pick your use case — email management, content creation, code review, or something else. We configure your assistant for you.",
   },
   {
     number: "3",
-    icon: Plug,
-    title: "Connect",
+    icon: Rocket,
+    title: "Meet Your Assistant",
     description:
-      "Add your channels — Discord, Slack, Telegram, and more. Your agent goes live instantly.",
+      "Your AI spins up on its own private machine. Connect it to Telegram, Discord, or your favorite tools — and let it get to work.",
   },
 ];
 
@@ -42,13 +42,12 @@ export function HowItWorks() {
               Up and running in minutes
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-lg text-foreground-muted">
-              Three simple steps. That&apos;s it.
+              Three steps. No servers. No command line.
             </p>
           </div>
         </FadeIn>
 
         <div className="relative mt-20">
-          {/* Connecting flow line between step circles (desktop) */}
           <div
             className="absolute top-7 right-[16.67%] left-[16.67%] hidden h-px bg-border md:block"
             aria-hidden="true"

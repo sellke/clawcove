@@ -1,24 +1,24 @@
-import { MessageSquare, Server, Wrench } from "lucide-react";
+import { Server, Terminal, Wrench } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 
 const PAIN_POINTS = [
   {
-    icon: Server,
-    title: "Complicated Setup",
+    icon: Terminal,
+    title: "Servers & setup",
     description:
-      "Most AI agents require servers, Docker, and command-line tools before you can even try them. That's a lot just to say hello.",
+      "SSH, Docker, TLS certificates, port forwarding — before you even get to the AI part. That's a lot of work just to say hello.",
   },
   {
     icon: Wrench,
-    title: "Constant Upkeep",
+    title: "Never-ending maintenance",
     description:
-      "Security patches, uptime monitoring, scaling — the maintenance never ends. And it's never what you signed up for.",
+      "Security patches, dependency updates, uptime monitoring. Your AI assistant shouldn't come with a sysadmin job.",
   },
   {
-    icon: MessageSquare,
-    title: "Confusing Configuration",
+    icon: Server,
+    title: "Shared infrastructure",
     description:
-      "Connecting an AI to your Discord or Slack should be as easy as adding a friend. It usually isn't.",
+      "Most hosting puts you on shared containers. Your data and performance depend on strangers. You deserve your own machine.",
   },
 ];
 
@@ -27,14 +27,14 @@ export function PainPoints() {
     <section className="bg-surface-alt py-24 md:py-32">
       <div className="mx-auto max-w-[1200px] px-6">
         <FadeIn>
-          <div className="max-w-2xl">
+          <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-              AI power.{" "}
-              <span className="text-foreground-muted">No pain.</span>
+              Running your own AI{" "}
+              <span className="text-foreground-muted">should be easy</span>
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-foreground-muted">
-              Skip the technical hoops and hurdles. Get an assistant that works
-              for you — not the other way around.
+              OpenClaw is incredible — but self-hosting it means becoming a
+              DevOps engineer. You have better things to do.
             </p>
           </div>
         </FadeIn>
@@ -42,8 +42,8 @@ export function PainPoints() {
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           {PAIN_POINTS.map((point, i) => (
             <FadeIn key={point.title} delay={i * 0.1}>
-              <div className="group rounded-xl border border-border bg-surface p-8 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-elevated">
-                <div className="inline-flex items-center justify-center rounded-lg bg-primary-50 p-3 text-primary-500 transition-colors group-hover:bg-primary-100">
+              <div className="group rounded-2xl border border-border bg-surface p-8 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-card">
+                <div className="inline-flex items-center justify-center rounded-xl bg-warm-50 p-3 text-warm-500 transition-colors group-hover:bg-warm-100">
                   <point.icon className="size-6" />
                 </div>
                 <h3 className="mt-5 text-lg font-semibold text-foreground">

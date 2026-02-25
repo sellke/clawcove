@@ -8,28 +8,27 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://clawcove.com";
 
 export const metadata: Metadata = {
   title: {
-    default: "ClawCove — Your AI Agent, Always On",
+    default: "ClawCove — Your Own Personal AI, Always On",
     template: "%s | ClawCove",
   },
   description:
-    "Deploy your own AI agent to Discord, Slack, or Telegram in under 5 minutes. No coding, no servers — just your agent, running 24/7.",
+    "Your own AI assistant, running 24/7 on a private machine. Powered by OpenClaw. Draft emails, automate tasks, manage your calendar — no setup, no servers.",
   metadataBase: new URL(siteUrl),
   alternates: { canonical: "/" },
   keywords: [
+    "personal AI assistant",
     "AI agent",
-    "AI chatbot",
-    "Discord bot",
-    "Slack bot",
-    "Telegram bot",
-    "AI assistant",
-    "AI agent hosting",
+    "OpenClaw hosting",
+    "AI assistant 24/7",
+    "managed AI agent",
+    "AI automation",
     "ClawCove",
     "OpenClaw",
   ],
   openGraph: {
-    title: "ClawCove — Your AI Agent, Always On",
+    title: "ClawCove — Your Own Personal AI, Always On",
     description:
-      "Deploy your own AI agent to Discord, Slack, or Telegram in under 5 minutes. No coding, no servers — just your agent, running 24/7.",
+      "Your own AI assistant, running 24/7 on a private machine. Powered by OpenClaw. Draft emails, automate tasks, manage your calendar — no setup, no servers.",
     url: siteUrl,
     siteName: "ClawCove",
     type: "website",
@@ -38,15 +37,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ClawCove — Your AI Agent, Always On",
+        alt: "ClawCove — Your Own Personal AI, Always On",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClawCove — Your AI Agent, Always On",
+    title: "ClawCove — Your Own Personal AI, Always On",
     description:
-      "Deploy your own AI agent to Discord, Slack, or Telegram in under 5 minutes. No coding, no servers — just your agent, running 24/7.",
+      "Your own AI assistant, running 24/7 on a private machine. Powered by OpenClaw. Draft emails, automate tasks, manage your calendar — no setup, no servers.",
     images: ["/og-image.png"],
   },
 };
@@ -71,7 +70,7 @@ export default function RootLayout({
               name: "ClawCove",
               url: siteUrl,
               description:
-                "Deploy your own AI agent to Discord, Slack, or Telegram — always on, no coding required.",
+                "Your own personal AI assistant, running 24/7 on a private machine. Powered by OpenClaw.",
             }),
           }}
         />
