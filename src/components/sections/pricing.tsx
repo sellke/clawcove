@@ -16,7 +16,7 @@ const tiers: PricingTier[] = [
     price: "$0",
     description: "Get started at no cost",
     features: [
-      "1 OpenClaw agent",
+      "1 AI agent",
       "Community channels only",
       "1,000 messages/month",
       "Community support",
@@ -27,7 +27,7 @@ const tiers: PricingTier[] = [
     price: "$29",
     description: "For serious builders",
     features: [
-      "3 OpenClaw agents",
+      "3 AI agents",
       "All channels (Discord, Slack, Telegram)",
       "Unlimited messages",
       "Priority support",
@@ -40,7 +40,7 @@ const tiers: PricingTier[] = [
     price: "$99",
     description: "For teams and organizations",
     features: [
-      "10 OpenClaw agents",
+      "10 AI agents",
       "All channels + custom integrations",
       "Unlimited messages",
       "Dedicated support",

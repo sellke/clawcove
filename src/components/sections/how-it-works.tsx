@@ -15,7 +15,7 @@ const STEPS = [
     icon: Rocket,
     title: "Deploy",
     description:
-      "One-click OpenClaw deployment. We handle servers, Docker, and scaling so you don't have to.",
+      "Choose your agent and deploy with one click. We handle the servers, the setup, and the scaling.",
   },
   {
     number: "3",

@@ -4,21 +4,21 @@ import { FadeIn } from "@/components/animations/fade-in";
 const PAIN_POINTS = [
   {
     icon: Server,
-    title: "Server Provisioning",
+    title: "Complicated Setup",
     description:
-      "Setting up servers, Docker, and infrastructure just to try an AI agent. You have better things to do.",
+      "Most AI agents require servers, Docker, and command-line tools before you can even try them. That's a lot just to say hello.",
   },
   {
     icon: Wrench,
-    title: "Ongoing Maintenance",
+    title: "Constant Upkeep",
     description:
-      "Security patches, uptime monitoring, scaling — the ops work never ends. And it's never what you signed up for.",
+      "Security patches, uptime monitoring, scaling — the maintenance never ends. And it's never what you signed up for.",
   },
   {
     icon: MessageSquare,
-    title: "Channel Configuration",
+    title: "Confusing Configuration",
     description:
-      "Connecting Discord, Slack, or Telegram shouldn't require a CS degree. Yet here we are.",
+      "Connecting an AI to your Discord or Slack should be as easy as adding a friend. It usually isn't.",
   },
 ];
 
@@ -29,14 +29,14 @@ export function PainPoints() {
         <FadeIn>
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl lg:text-5xl">
-              Running your own AI agent{" "}
+              Having your own AI agent{" "}
               <span className="text-foreground-muted">
                 shouldn&apos;t be this hard
               </span>
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-foreground-muted">
-              You shouldn&apos;t need to be a DevOps engineer to have an AI
-              assistant.
+              You shouldn&apos;t need to be a developer to have an AI assistant
+              in your community.
             </p>
           </div>
         </FadeIn>

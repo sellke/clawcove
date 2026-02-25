@@ -1,28 +1,32 @@
-import { ArrowRight, Code2, Cpu, Heart } from "lucide-react";
+import { ArrowRight, Code2, Heart, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const differentiators = [
   {
     icon: Code2,
-    title: "Deep Integration",
+    title: "Open Source at the Core",
     description:
-      "Built from the ground up around OpenClaw's architecture, not bolted on as an afterthought.",
+      "ClawCove is built on OpenClaw, a transparent, open-source AI agent framework. No black boxes — you can see exactly how your agent works.",
   },
   {
-    icon: Cpu,
-    title: "Optimized Runtime",
+    icon: Sparkles,
+    title: "Purpose-Built, Not Duct-Taped",
     description:
-      "Fine-tuned infrastructure that understands OpenClaw's resource patterns and scaling needs.",
+      "This isn't generic cloud hosting with an AI wrapper. Every feature is designed around how conversational agents actually work.",
   },
   {
     icon: Heart,
     title: "Community-Driven",
     description:
-      "Shaped by the OpenClaw community. Your feedback directly influences what we build next.",
+      "Shaped by real users building real agents. Your feedback directly influences what we build next.",
   },
 ];
 
-const trustSignals = ["Open source", "Community backed", "Transparent roadmap"];
+const trustSignals = [
+  "Open source",
+  "No vendor lock-in",
+  "Transparent roadmap",
+];
 
 export function OpenClawNative() {
   return (
@@ -30,13 +34,14 @@ export function OpenClawNative() {
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Purpose-built for OpenClaw
+            Built on open source you can trust
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-foreground-muted">
-            ClawCove isn&apos;t generic cloud hosting with a template slapped on
-            top. Every feature is designed specifically for the way OpenClaw
-            agents work — so you get a faster, more reliable, and more intuitive
-            experience out of the box.
+            ClawCove runs on{" "}
+            <span className="font-medium text-foreground">OpenClaw</span>, an
+            open-source framework for building AI agents. That means no
+            proprietary lock-in, full transparency, and a growing community of
+            builders behind it.
           </p>
         </div>
 
@@ -68,7 +73,7 @@ export function OpenClawNative() {
 
           <Button variant="link" asChild>
             <a href="https://github.com/openclaw" className="group gap-2">
-              Learn more about OpenClaw
+              Explore the OpenClaw project
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </a>
           </Button>

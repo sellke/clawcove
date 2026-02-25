@@ -18,16 +18,18 @@ export function Hero() {
         <div className="max-w-2xl">
           <FadeIn>
             <h1 className="text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl">
-              Your AI Agent, <span className="text-primary-500">Always On</span>
+              Your Own AI Agent,{" "}
+              <span className="text-primary-500">Always On</span>
             </h1>
           </FadeIn>
 
           <FadeIn delay={0.1}>
             <p className="mt-6 text-lg leading-relaxed text-foreground-muted md:text-xl">
-              ClawCove is the easiest way to deploy and run{" "}
-              <span className="font-medium text-foreground">OpenClaw</span> AI
-              agents 24/7. No servers to manage, no DevOps required — just your
-              agent, always ready.
+              Deploy a personal AI assistant that lives in your Discord, Slack,
+              or Telegram — running 24/7, no technical skills required. Powered
+              by the open-source{" "}
+              <span className="font-medium text-foreground">OpenClaw</span>{" "}
+              framework.
             </p>
           </FadeIn>
 

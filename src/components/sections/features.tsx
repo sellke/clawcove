@@ -13,7 +13,7 @@ const features = [
     icon: Rocket,
     title: "One-Click Deploy",
     description:
-      "Launch your OpenClaw agent with a single click. No servers, no Docker, no config files.",
+      "Launch your AI agent with a single click. No servers, no Docker, no config files.",
   },
   {
     icon: MessageSquare,

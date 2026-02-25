@@ -8,26 +8,28 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://clawcove.com";
 
 export const metadata: Metadata = {
   title: {
-    default: "ClawCove — OpenClaw Hosting, Simplified",
+    default: "ClawCove — Your AI Agent, Always On",
     template: "%s | ClawCove",
   },
   description:
-    "Your own AI agent, running 24/7, in under 5 minutes. ClawCove is the easiest way to deploy and manage OpenClaw agents.",
+    "Deploy your own AI agent to Discord, Slack, or Telegram in under 5 minutes. No coding, no servers — just your agent, running 24/7.",
   metadataBase: new URL(siteUrl),
   alternates: { canonical: "/" },
   keywords: [
-    "OpenClaw",
+    "AI agent",
+    "AI chatbot",
+    "Discord bot",
+    "Slack bot",
+    "Telegram bot",
+    "AI assistant",
     "AI agent hosting",
-    "managed AI agents",
-    "Discord bot hosting",
-    "Slack bot hosting",
-    "AI agent deployment",
     "ClawCove",
+    "OpenClaw",
   ],
   openGraph: {
-    title: "ClawCove — OpenClaw Hosting, Simplified",
+    title: "ClawCove — Your AI Agent, Always On",
     description:
-      "Your own AI agent, running 24/7, in under 5 minutes. ClawCove is the easiest way to deploy and manage OpenClaw agents.",
+      "Deploy your own AI agent to Discord, Slack, or Telegram in under 5 minutes. No coding, no servers — just your agent, running 24/7.",
     url: siteUrl,
     siteName: "ClawCove",
     type: "website",
@@ -36,15 +38,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ClawCove — OpenClaw Hosting, Simplified",
+        alt: "ClawCove — Your AI Agent, Always On",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClawCove — OpenClaw Hosting, Simplified",
+    title: "ClawCove — Your AI Agent, Always On",
     description:
-      "Your own AI agent, running 24/7, in under 5 minutes. ClawCove is the easiest way to deploy and manage OpenClaw agents.",
+      "Deploy your own AI agent to Discord, Slack, or Telegram in under 5 minutes. No coding, no servers — just your agent, running 24/7.",
     images: ["/og-image.png"],
   },
 };
@@ -68,7 +70,8 @@ export default function RootLayout({
               "@type": "Organization",
               name: "ClawCove",
               url: siteUrl,
-              description: "Managed OpenClaw hosting platform",
+              description:
+                "Deploy your own AI agent to Discord, Slack, or Telegram — always on, no coding required.",
             }),
           }}
         />
