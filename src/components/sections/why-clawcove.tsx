@@ -20,7 +20,7 @@ const PILLARS = [
     icon: Eye,
     title: "Transparent by default",
     description:
-      "See which AI models power your assistant. Choose between Claude, GPT-4, and more. Your data is always exportable — no lock-in, ever.",
+      "See which AI models power your assistant. Choose between Claude, GPT, and more. Your data is always exportable — no lock-in, ever.",
     highlight: "Choose your AI model",
   },
   {

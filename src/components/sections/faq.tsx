@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "Which AI models does it use?",
     answer:
-      "ClawCove is powered by OpenClaw, which supports multiple AI models including Claude, GPT-4, and more. You'll be able to see and choose which model powers your assistant. We keep everything updated so you always have access to the latest capabilities.",
+      "ClawCove is powered by OpenClaw, which supports multiple AI models including Claude, GPT, and more. You'll be able to see and choose which model powers your assistant. We keep everything updated so you always have access to the latest capabilities.",
   },
   {
     question: "What is OpenClaw?",
