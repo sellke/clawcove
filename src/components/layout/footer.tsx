@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 
 const linkGroups = [
@@ -24,7 +25,15 @@ export function Footer() {
       <div className="mx-auto max-w-[1200px] px-6 py-12">
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div className="max-w-xs">
-            <span className="text-lg font-bold tracking-tight">ClawCove</span>
+            <div className="flex items-center gap-2">
+              <Image
+                src="/mascot.png"
+                alt="ClawCove mascot"
+                width={28}
+                height={28}
+              />
+              <span className="text-lg font-bold tracking-tight">ClawCove</span>
+            </div>
             <p className="mt-2 text-sm text-foreground-muted">
               Your own personal AI. Always on. Always yours.
             </p>
