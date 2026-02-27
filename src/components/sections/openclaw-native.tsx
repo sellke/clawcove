@@ -72,7 +72,7 @@ export function OpenClawNative() {
           </div>
 
           <Button variant="link" asChild>
-            <a href="https://github.com/openclaw" className="group gap-2">
+            <a href="https://github.com/openclaw/openclaw" className="group gap-2">
               Explore the OpenClaw project
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </a>

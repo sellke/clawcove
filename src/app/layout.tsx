@@ -8,17 +8,18 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://clawcove.com";
 
 export const metadata: Metadata = {
   title: {
-    default: "ClawCove — Your Own Personal AI, Always On",
+    default: "ClawCove — Your Personal AI. Always On. Always Yours.",
     template: "%s | ClawCove",
   },
   description:
-    "Your own AI assistant, running 24/7 on a private machine. Powered by OpenClaw. Draft emails, automate tasks, manage your calendar — no setup, no servers.",
+    "A secure, always-on AI assistant in the cloud. Powered by OpenClaw. Draft emails, manage your calendar, automate tasks — no setup, no servers required.",
   metadataBase: new URL(siteUrl),
   alternates: { canonical: "/" },
   keywords: [
     "personal AI assistant",
     "AI agent",
     "OpenClaw hosting",
+    "cloud AI assistant",
     "AI assistant 24/7",
     "managed AI agent",
     "AI automation",
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
     "OpenClaw",
   ],
   openGraph: {
-    title: "ClawCove — Your Own Personal AI, Always On",
+    title: "ClawCove — Your Personal AI. Always On. Always Yours.",
     description:
-      "Your own AI assistant, running 24/7 on a private machine. Powered by OpenClaw. Draft emails, automate tasks, manage your calendar — no setup, no servers.",
+      "A secure, always-on AI assistant in the cloud. Powered by OpenClaw. Draft emails, manage your calendar, automate tasks — no setup, no servers required.",
     url: siteUrl,
     siteName: "ClawCove",
     type: "website",
@@ -37,15 +38,15 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ClawCove — Your Own Personal AI, Always On",
+        alt: "ClawCove — Your Personal AI. Always On. Always Yours.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ClawCove — Your Own Personal AI, Always On",
+    title: "ClawCove — Your Personal AI. Always On. Always Yours.",
     description:
-      "Your own AI assistant, running 24/7 on a private machine. Powered by OpenClaw. Draft emails, automate tasks, manage your calendar — no setup, no servers.",
+      "A secure, always-on AI assistant in the cloud. Powered by OpenClaw. Draft emails, manage your calendar, automate tasks — no setup, no servers required.",
     images: ["/og-image.png"],
   },
 };
@@ -70,7 +71,7 @@ export default function RootLayout({
               name: "ClawCove",
               url: siteUrl,
               description:
-                "Your own personal AI assistant, running 24/7 on a private machine. Powered by OpenClaw.",
+                "A secure, always-on personal AI assistant in the cloud. Powered by OpenClaw.",
             }),
           }}
         />

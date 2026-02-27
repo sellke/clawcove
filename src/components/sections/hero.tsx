@@ -72,7 +72,7 @@ export function Hero() {
             <p className="mt-6 text-sm text-foreground-subtle">
               🦞 Powered by{" "}
               <a
-                href="https://github.com/openclaw"
+                href="https://github.com/openclaw/openclaw"
                 className="underline underline-offset-2 transition-colors hover:text-foreground-muted"
               >
                 OpenClaw
