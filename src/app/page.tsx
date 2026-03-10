@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Footer } from "@/components/layout/footer";
 import { Navigation } from "@/components/layout/navigation";
@@ -9,10 +10,14 @@ import { PainPoints } from "@/components/sections/pain-points";
 import { Pricing } from "@/components/sections/pricing";
 import { UseCases } from "@/components/sections/use-cases";
 import { WhyClawCove } from "@/components/sections/why-clawcove";
+import { ConfirmationToast } from "@/components/ui/confirmation-toast";
 
 export default function Home() {
   return (
     <>
+      <Suspense>
+        <ConfirmationToast />
+      </Suspense>
       <Navigation />
       <main>
         <Hero />

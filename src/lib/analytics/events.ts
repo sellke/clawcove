@@ -21,5 +21,6 @@ export const AnalyticsEvents = {
   PRICING_SECTION_VIEWED: "pricing_section_viewed",
   FAQ_ITEM_OPENED: "faq_item_opened",
   CTA_CLICKED: "cta_clicked",
+  WAITLIST_EMAIL_CONFIRMED: "waitlist_email_confirmed",
   BLOG_POST_VIEWED: "blog_post_viewed",
 } as const;
