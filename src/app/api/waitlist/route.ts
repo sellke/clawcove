@@ -157,12 +157,13 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     // #region agent log
-    console.error("[DBG-5a8468] CATCH", (error as Error)?.name, (error as Error)?.message);
+    const errMsg = (error as Error)?.message ?? String(error);
+    console.error("[DBG-5a8468] CATCH", (error as Error)?.name, errMsg);
     // #endregion
 
     console.error("Waitlist signup error:", error);
     return NextResponse.json(
-      { success: false, message: "Something went wrong. Please try again." },
+      { success: false, message: "Something went wrong. Please try again.", _debug: errMsg },
       { status: 500 },
     );
   }

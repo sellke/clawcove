@@ -42,7 +42,7 @@ export function WaitlistForm({
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
         throw new Error(
-          data.error || "Something went wrong. Please try again.",
+          data._debug || data.message || data.error || "Something went wrong. Please try again.",
         );
       }
 
