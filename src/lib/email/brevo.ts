@@ -8,7 +8,7 @@ function getClient(): BrevoClient | null {
 
 const SENDER = {
   name: "ClawCove",
-  email: "hello@clawcove.com",
+  email: "shell@clawcove.ai",
 } as const;
 
 export async function createBrevoContact(

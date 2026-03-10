@@ -13,7 +13,7 @@ Configure Vercel project with environment variables and custom domain, and authe
 
 - Vercel project exists but environment variables (`DATABASE_URL`, `BREVO_API_KEY`, `WAITLIST_TOKEN_SECRET`, `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_POSTHOG_KEY`, `NEXT_PUBLIC_POSTHOG_HOST`) are not configured for production/preview
 - Custom domain (`clawcove.com`) not yet attached to Vercel project
-- Brevo sender domain (`clawcove.com`) not authenticated — emails from `hello@clawcove.com` will fail or land in spam
+- Brevo sender domain (`clawcove.ai`) not authenticated — emails from `shell@clawcove.ai` will fail or land in spam
 - `.env.example` documents required vars but no production values are set
 
 ## Expected Outcome
@@ -21,8 +21,8 @@ Configure Vercel project with environment variables and custom domain, and authe
 - All environment variables from `.env.example` configured in Vercel for **Production** and **Preview** environments
 - `clawcove.com` (and `www.clawcove.com`) added as custom domains in Vercel with DNS records verified
 - `NEXT_PUBLIC_SITE_URL` set to `https://clawcove.com` in production
-- Brevo sender domain authenticated via DKIM, SPF, and DMARC DNS records
-- `hello@clawcove.com` verified as sender — confirmation emails deliver to inbox
+- Brevo sender domain (`clawcove.ai`) authenticated via DKIM, SPF, and DMARC DNS records
+- `shell@clawcove.ai` verified as sender — confirmation emails deliver to inbox
 
 ## Relevant Files
 
