@@ -33,6 +33,10 @@ function getTokenSecret(): Uint8Array {
 
 export async function POST(request: NextRequest) {
   try {
+    // #region agent log
+    console.log("[DBG-5a8468] entry", JSON.stringify({DB:!!process.env.DATABASE_URL,TOK:!!process.env.WAITLIST_TOKEN_SECRET,BRV:!!process.env.BREVO_API_KEY,URL:process.env.NEXT_PUBLIC_SITE_URL??"(unset)"}));
+    // #endregion
+
     const ip = getClientIp(request);
 
     const { success: withinLimit } = checkRateLimit(
@@ -53,6 +57,10 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const parsed = waitlistSchema.safeParse(body);
 
+    // #region agent log
+    console.log("[DBG-5a8468] parse", JSON.stringify({keys:Object.keys(body),ok:parsed.success}));
+    // #endregion
+
     if (!parsed.success) {
       return NextResponse.json(
         { success: false, message: "Please enter a valid email address." },
@@ -62,7 +70,6 @@ export async function POST(request: NextRequest) {
 
     const { email, channels, referralSource, website } = parsed.data;
 
-    // Honeypot — bots fill hidden fields; silently accept to not tip them off
     if (website) {
       return NextResponse.json({
         success: true,
@@ -72,11 +79,19 @@ export async function POST(request: NextRequest) {
 
     const normalizedEmail = email.toLowerCase().trim();
 
+    // #region agent log
+    console.log("[DBG-5a8468] pre-db-select");
+    // #endregion
+
     const existing = await db
       .select({ id: waitlistEntries.id })
       .from(waitlistEntries)
       .where(eq(waitlistEntries.email, normalizedEmail))
       .limit(1);
+
+    // #region agent log
+    console.log("[DBG-5a8468] post-db-select", existing.length);
+    // #endregion
 
     if (existing.length > 0) {
       return NextResponse.json({
@@ -84,6 +99,10 @@ export async function POST(request: NextRequest) {
         message: "You're already on the list! We'll be in touch soon.",
       });
     }
+
+    // #region agent log
+    console.log("[DBG-5a8468] pre-jwt-sign");
+    // #endregion
 
     const token = await new SignJWT({
       email: normalizedEmail,
@@ -93,6 +112,10 @@ export async function POST(request: NextRequest) {
       .setIssuedAt()
       .setExpirationTime("24h")
       .sign(getTokenSecret());
+
+    // #region agent log
+    console.log("[DBG-5a8468] post-jwt, pre-insert");
+    // #endregion
 
     await db.insert(waitlistEntries).values({
       email: normalizedEmail,
@@ -124,11 +147,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // #region agent log
+    console.log("[DBG-5a8468] success");
+    // #endregion
+
     return NextResponse.json({
       success: true,
       message: "Check your email to confirm your spot!",
     });
   } catch (error) {
+    // #region agent log
+    console.error("[DBG-5a8468] CATCH", (error as Error)?.name, (error as Error)?.message);
+    // #endregion
+
     console.error("Waitlist signup error:", error);
     return NextResponse.json(
       { success: false, message: "Something went wrong. Please try again." },
