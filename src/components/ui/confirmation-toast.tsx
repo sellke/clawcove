@@ -36,7 +36,7 @@ function cleanUrl() {
   const url = new URL(window.location.href);
   url.searchParams.delete("confirmed");
   url.searchParams.delete("error");
-  window.history.replaceState({}, "", url.pathname);
+  window.history.replaceState({}, "", url.pathname + url.search);
 }
 
 export function ConfirmationToast() {
