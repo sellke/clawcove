@@ -3,7 +3,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
@@ -81,16 +80,6 @@ export function Navigation() {
           )}
         </div>
 
-        <div className="hidden md:block">
-          <Button
-            onClick={() => scrollTo("hero")}
-            size="sm"
-            className="cursor-pointer"
-          >
-            Join the Waitlist
-          </Button>
-        </div>
-
         <button
           type="button"
           onClick={() => setMobileOpen((o) => !o)}
@@ -132,14 +121,6 @@ export function Navigation() {
                   </button>
                 ),
               )}
-              <div className="pt-2">
-                <Button
-                  onClick={() => scrollTo("hero")}
-                  className="w-full cursor-pointer"
-                >
-                  Join the Waitlist
-                </Button>
-              </div>
             </div>
           </motion.div>
         )}
