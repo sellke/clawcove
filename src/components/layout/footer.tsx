@@ -5,15 +5,15 @@ const linkGroups = [
     title: "Product",
     links: [
       { label: "Blog", href: "/blog" },
-      { label: "OpenClaw", href: "#" },
-      { label: "Twitter / X", href: "#" },
+      { label: "OpenClaw", href: "https://openclaw.ai/" },
+      { label: "Twitter / X", href: "https://x.com/ClawCove" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
     ],
   },
 ];
@@ -47,6 +47,10 @@ export function Footer() {
                     <li key={link.label}>
                       <a
                         href={link.href}
+                        {...(link.href.startsWith("http") && {
+                          target: "_blank",
+                          rel: "noopener noreferrer",
+                        })}
                         className="text-sm text-foreground-muted transition-colors hover:text-foreground"
                       >
                         {link.label}
