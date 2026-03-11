@@ -165,7 +165,7 @@ export default function TermsOfServicePage() {
         <h2>14. Contact</h2>
         <p>
           Questions about these Terms? Reach out at{" "}
-          <a href="mailto:legal@clawcove.com">legal@clawcove.com</a>.
+          <a href="mailto:legal@clawcove.ai">legal@clawcove.ai</a>.
         </p>
       </div>
     </main>

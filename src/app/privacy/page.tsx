@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
         <p>
           ClawCove (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates
           the ClawCove platform at{" "}
-          <a href="https://clawcove.com">clawcove.com</a>. This Privacy Policy
+          <a href="https://clawcove.ai">clawcove.ai</a>. This Privacy Policy
           explains how we collect, use, and protect your information when you use
           our service.
         </p>
@@ -125,7 +125,7 @@ export default function PrivacyPolicyPage() {
         </ul>
         <p>
           To exercise any of these rights, contact us at{" "}
-          <a href="mailto:privacy@clawcove.com">privacy@clawcove.com</a>.
+          <a href="mailto:privacy@clawcove.ai">privacy@clawcove.ai</a>.
         </p>
 
         <h2>Data Retention</h2>
@@ -155,7 +155,7 @@ export default function PrivacyPolicyPage() {
         <h2>Contact Us</h2>
         <p>
           If you have questions about this Privacy Policy, please reach out at{" "}
-          <a href="mailto:privacy@clawcove.com">privacy@clawcove.com</a>.
+          <a href="mailto:privacy@clawcove.ai">privacy@clawcove.ai</a>.
         </p>
       </div>
     </main>
